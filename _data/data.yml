@@ -46,12 +46,16 @@ education:
     - degree: Master of Science - MS, Instructional Design and Development
       university: University of South Alabama
       time: May 2025 - December 2028
-    - degree: Bachelor’s Degree, Information Technology
+
+    - degree: Bachelor’s Degree, Information Technology, Magna Cum Laude
       university: University of South Alabama
       time: 2013 - 2015
+
     - degree: Associate's Degree, Network Administration
       university: James H Faulkner State Community College
       time: 2006 - 2009
+      details: |
+        - Member, Golf Team
 
 experiences:
   title: Experience
