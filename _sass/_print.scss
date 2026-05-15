@@ -6,7 +6,7 @@
 
   body {
     font-size: 9.5pt;
-    line-height: 1.3;
+    line-height: 1.35;
     background-color: white;
   }
 
@@ -15,7 +15,7 @@
     margin: 0 !important;
   }
 
-  /* Completely hide sidebar on print */
+  /* Hide sidebar completely when printing */
   .sidebar-wrapper {
     display: none !important;
   }
@@ -27,18 +27,17 @@
     padding: 0 !important;
   }
 
-  /* Strong page break protection */
+  /* Strong page-break protection for your long bullets */
   .container-block,
   .experience-item,
   section,
-  .skillset {
+  .skillset,
+  .details {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    margin-bottom: 20px !important;
+    margin-bottom: 22px !important;
   }
 
-  .experience-details,
-  .details,
   li {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
@@ -48,11 +47,7 @@
     page-break-after: avoid !important;
   }
 
-  /* Clean up spacing */
-  .main-wrapper .time {
-    padding: 8px 20px 8px 8px;
-  }
-
+  /* Keep everything else clean */
   footer,
   .print-button,
   .pdf-button,
@@ -60,7 +55,6 @@
     display: none !important;
   }
 
-  /* Make sure skill bars stay visible and colored */
   .skillset .level-bar-inner {
     background-color: $theme-color !important;
     -webkit-print-color-adjust: exact;
