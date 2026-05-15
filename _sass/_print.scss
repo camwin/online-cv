@@ -2,30 +2,30 @@
   @page {
     size: A4;
   }
+
   body {
     font-size: 9pt;
     background-color: white;
     padding: 0;
   }
+
   .wrapper {
     max-width: 100%;
   }
 
-  //   img.avatar {
-  //     filter: grayscale(1);
-  //     -webkit-filter: greyscale(1);
-  //   }
   .main-wrapper .time {
     padding: 10px 30px 10px 10px;
-    //  float: right;
-    //  color: black !important;
     -webkit-print-color-adjust: exact;
   }
+
   .sidebar-wrapper {
     position: static;
-    //  float: right;
-    //  width: 40%;
     -webkit-print-color-adjust: exact;
+  }
+
+  /* Hide the entire sidebar on print/PDF — much cleaner */
+  .sidebar-wrapper {
+    display: none !important;
   }
 
   .remove-container.container-block {
@@ -36,26 +36,47 @@
     display: none;
   }
 
+  /* ================ PAGE BREAK FIXES (for long bullets) ================ */
   .skillset,
-  .container-block {
-    break-inside: avoid;
+  .container-block,
+  .experience-item,
+  section {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
+  .experience-details,
+  .details,
+  li {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  h2, h3, h4 {
+    page-break-after: avoid !important;
+  }
+
+  /* Extra breathing room between major sections */
+  .experience-item {
+    margin-bottom: 25px !important;
+  }
+
+  /* Keep skill bars colored */
   .skillset .level-bar-inner {
     background-color: $theme-color !important;
     -webkit-print-color-adjust: exact;
   }
 
-   .fa-inverse,
-   .fa-inverse:after,
-   .fa-inverse:before {
-     color: #ffffff !important;
-   }
+  .fa-inverse,
+  .fa-inverse:after,
+  .fa-inverse:before {
+    color: #ffffff !important;
+  }
 
-    /* Hide buttons when printing */
-    .print-button,
-    .pdf-button,
-    .d-print-none {
-        display: none !important;
-    }
+  /* Hide buttons when printing */
+  .print-button,
+  .pdf-button,
+  .d-print-none {
+    display: none !important;
+  }
 }
