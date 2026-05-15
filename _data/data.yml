@@ -143,26 +143,6 @@ certifications:
       details: |
         Certified Wireless Network Administrator (CWNA)
 
-# Optional sections - you can delete these if you don't want them
-projects:
-  title: Projects
-  intro: ""
-  assignments: []
-
-oss:
-  title: OSS Contributions
-  intro: ""
-  contributions: []
-
-publications:
-  title: Publications
-  intro: ""
-  papers: []
-
-recommendations:
-  title: Recommendations
-  list: []
-
 skills:
   title: Skills & Proficiency
   toolset:
